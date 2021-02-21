@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  /* background: linear-gradient(red, blue); */
+  height: 100vh;
+  background: linear-gradient(to top left, #b63bdb, #2c0b61);
+
+  /* background: green; */
+  /* background: linear-gradient(to top left, #b63bdb 0%, #2c0b61 100%); */
+  /* height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center top;*/
+  /* overflow: scroll; */
+
+  /* background-repeat: no-repeat; */
+  /* min-height: 50%; */
+  /* min-height: -webkit-fill-available; */
+}
+
+.top {
+  margin: auto;
+  width: 85%;
+  /* height: 10%; */
+  position: relative;
+  top: 2%;
+  /*   background: chartreuse; */
+
+  display: flex;
+  justify-content: center;
+}
+
+.btn--new {
+  display: block;
+}
+
+.board {
+  background-color: rgba(255, 255, 255, 0.35);
+  margin: auto;
+  width: 85%;
+  /* height: 670px; */
+  height: 80vh;
+  position: relative;
+  top: 1.5rem;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  font-size: 80%;
+  overflow: hidden;
+}
+.name {
+  /* margin-top: 10%; */
+  /* display: block; */
+  position: relative;
+  /* line-height: 10rem; */
+  font-weight: 500;
+  top: 0.2rem;
+}
+
+/* .top-section {
+  top: 7vh;
+  position: relative;
+} */
+
+.bottom-section {
+  top: 7vh;
+  position: relative;
+}
+
+.player--active .name {
+  font-weight: 900;
+}
+
+.player--active .score {
+  font-weight: 900;
+}
+
+.player--active .current {
+  font-weight: 900;
+}
+
+.player-0 {
+  /* border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  background: green;
+  border: solid green 10px;
+  z-index: 5; */
+}
+
+.player {
+  height: 50%;
+  margin: 0;
+  text-align: center;
+}
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.middle {
+  position: absolute;
+  /* display: inline-block; */
+  width: 100%;
+  /*  top: 20rem; */
+  height: 6rem;
+  /* top: 41vh; */
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  /* background: rgb(4, 139, 4); */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  /* background: crimson; */
+  width: 100px;
+  height: 100%;
+  /* display: inline-block; */
+}
+
+.center {
+  /* background: cyan; */
+  width: 100px;
+  height: 100%;
+  /* display: inline-block; */
+}
+
+.right {
+  /* background: yellow; */
+  width: 75px;
+  height: 100%;
+  /* display: inline-block; */
+}
+
+.dice {
+  position: relative;
+  transform: translateY(-50%);
+  height: 80%;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  top: 50%;
+}
+
+.btn {
+  position: relative;
+  /* top: 6%; */
+  /* transform: translateX(-50%); */
+  /* transform: translateY(-50%); */
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-tap-highlight-color: transparent;
+
+  /* padding: 0.7rem 2.5rem; */
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  /* z-index: 5; */
+}
+
+.btn:active {
+  /* transform: translate(-0.001%, 0.001%); */
+  /* transform: translate(-50%, 3px); */
+  transform: translate(0, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.current {
+  background: #db3b8b;
+  width: 13rem;
+  margin: auto;
+  height: 6rem;
+  /* height: 40%; */
+  font-size: 1.5rem;
+  line-height: 3rem;
+  border-radius: 9px;
+  color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+  /* position: relative;
+  top: 100px; */
+}
+
+.hidden{
+  display: none;
+}
+
+/* .player {
+  position: relative;
+  top: 50px;
+  width: 80%;
+  height: 200px;
+  background-color: #bf83d1;
+  margin: auto;
+  opacity: 0.3;
+  border-radius: 5px;
+} */
+
+/* .player-active {
+  height: 350px;
+  width: inherit;
+  opacity: 1;
+  background: background: #bf83d1;  
+  top: 50px;
+  width: 80%;
+} */ ;
